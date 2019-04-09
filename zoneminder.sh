@@ -20,14 +20,21 @@
 # Site Oficial do ZoneMinder: https://zoneminder.com/
 #
 # Antes de iniciar a instalação do ZoneMinder, utilize alguns comandos: 
-# * sudo -i = utilizar o usuário root
-# * apt-get update
-# * apt-get upgrade
-# * apt-get dist-upgrade
+# * Utilizar o usuário root -> $ sudo -i OU $ su
+# * Atualize o Sistema -> $ apt-get update
+# * Atualize o Sistema -> $ apt-get upgrade
+# * Atualize o Sistema de Distribuição -> $ apt-get dist-upgrade
 # 
 # Instale alguns recursos importantes:
-# * Install Apache2
-# * Install vim
+# * Install Apache2 -> $ sudo apt install apache2
+# * Verifique se o serviço apache2 está ativo -> $ sudo service apache2 status OU $ sudo systemctl status apache2
+# * Verifique o endereço IP do servidor e tente conectar no browser do navegador
+# * Install vim -> $ sudo apt-get install vim 
+# * Install o banco de dados -> $ apt-get install mysql.common e $ apt-get install mysql.server
+# * Install o git para clonar o repositório -> $ sudo apt-get install git
+# * Clone o repositório -> $ git clone https://github.com/eurodrigofernandes/install-ubuntu-1804
+# * Acesse o repositório -> $ cd install-ubuntu-1804
+# * Atualizando o repositório local -> $ git pull
 # 
 #
 # Variável da Data Inicial para calcular o tempo de execução do script (VARIÁVEL MELHORADA)
