@@ -1,8 +1,8 @@
 #!/bin/bash
 # Autor: Rodrigo Fernandes
 # Data de criação: 02/04/2019
-# Data de atualização: 02/04/2019
-# Versão: 0.1
+# Data de atualização: 09/04/2019
+# Versão: 0.2
 # Testado e homologado para a versão do Ubuntu Server 18.04.x LTS x64
 # Kernel >= 4.18.x
 #
