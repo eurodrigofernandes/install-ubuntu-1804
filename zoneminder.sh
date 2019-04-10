@@ -19,6 +19,8 @@
 #
 # Site Oficial do ZoneMinder: https://zoneminder.com/
 #
+#####################################################################################################################################
+#
 # Antes de iniciar a instalação do ZoneMinder, utilize alguns comandos: 
 # * Utilizar o usuário root -> $ sudo -i OU $ su
 # * Atualize o Sistema -> $ apt-get update
@@ -30,12 +32,21 @@
 # * Verifique se o serviço apache2 está ativo -> $ sudo service apache2 status OU $ sudo systemctl status apache2
 # * Verifique o endereço IP do servidor e tente conectar no browser do navegador
 # * Install vim -> $ sudo apt-get install vim 
+# * Install nano -> $ sudo apt-get install nano
 # * Install o banco de dados -> $ apt-get install mysql.common e $ apt-get install mysql.server
 # * Install o git para clonar o repositório -> $ sudo apt-get install git
 # * Clone o repositório -> $ git clone https://github.com/eurodrigofernandes/install-ubuntu-1804
 # * Acesse o repositório -> $ cd install-ubuntu-1804
 # * Atualizando o repositório local -> $ git pull
-# 
+# * Configure placa de rede para IP static -> nano /etc/network/interfaces
+# 					      Digite os dados na linha vazia:
+#	LINHA DESCOMENTADA		       iface eth0 inet static (em eth0 digite a porta de rede)
+#   	LINHA DESCOMENTADA			address 0.0.0.0 (Digite o Endereço IP)
+#  	LINHA DESCOMENTADA			network 0.0.0.0 (Digite o endereço de Rede)
+#  	LINHA DESCOMENTADA			netmask 0.0.0.0 (Digite o endereço de Mascara)
+#   	LINHA DESCOMENTADA			gateway 0.0.0.0 (Digite o endereço de Gateway)
+#
+#####################################################################################################################################
 #
 # Variável da Data Inicial para calcular o tempo de execução do script (VARIÁVEL MELHORADA)
 # opção do comando date: +%T (Time)
