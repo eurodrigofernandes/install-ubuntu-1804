@@ -28,8 +28,16 @@
 # * Atualize o Sistema de Distribuição -> $ apt-get dist-upgrade
 # 
 # Instale alguns recursos importantes:
+# * Install Open SSH -> $ sudo apt-get install -y openssh-server
+# * Startar servico Open SSH -> $ service ssh start OU $ sudo systemctl start ssh
+# * Se necessário Configure algumas linhas de sua preferencia do SSH -> $ sudo nano /etc/ssh/sshd_config
+# * Restartar o servico Open SSH -> $ sudo service ssh restart OU $ sudo systemctl restart ssh
 # * Install Apache2 -> $ sudo apt install apache2
 # * Verifique se o serviço apache2 está ativo -> $ sudo service apache2 status OU $ sudo systemctl status apache2
+# * install php7.2 -> $ apt-cache pkgnames | grep php7.2
+#		      $ sudo apt-get install php -y
+# * Restartar o serviço -> $ service apache2 restart 
+# * Install net-tools para verificar o IP com o ifconfig -> $ sudo apt-get install net-tools
 # * Verifique o endereço IP do servidor e tente conectar no browser do navegador
 # * Install vim -> $ sudo apt-get install vim 
 # * Install nano -> $ sudo apt-get install nano
@@ -38,13 +46,8 @@
 # * Clone o repositório -> $ git clone https://github.com/eurodrigofernandes/install-ubuntu-1804
 # * Acesse o repositório -> $ cd install-ubuntu-1804
 # * Atualizando o repositório local -> $ git pull
-# * Configure placa de rede para IP static -> nano /etc/network/interfaces
-# 					      Digite os dados na linha vazia:
-#	LINHA DESCOMENTADA		       iface eth0 inet static (em eth0 digite a porta de rede)
-#   	LINHA DESCOMENTADA			address 0.0.0.0 (Digite o Endereço IP)
-#  	LINHA DESCOMENTADA			network 0.0.0.0 (Digite o endereço de Rede)
-#  	LINHA DESCOMENTADA			netmask 0.0.0.0 (Digite o endereço de Mascara)
-#   	LINHA DESCOMENTADA			gateway 0.0.0.0 (Digite o endereço de Gateway)
+# * install php 
+# 
 #
 #####################################################################################################################################
 #
