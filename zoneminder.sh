@@ -35,8 +35,8 @@
 # * Install Apache2 -> $ sudo apt install apache2
 # * Verifique se o serviço apache2 está ativo -> $ sudo service apache2 status OU $ sudo systemctl status apache2
 # * install php7.2 -> $ apt-cache pkgnames | grep php7.2
-#		      $ sudo apt-get install php -y
-# * Restartar o serviço -> $ service apache2 restart 
+#		      $ sudo apt-get install php -y 
+# * Restartar o serviço -> $ service apache2 restart
 # * Install net-tools para verificar o IP com o ifconfig -> $ sudo apt-get install net-tools
 # * Verifique o endereço IP do servidor e tente conectar no browser do navegador
 # * Install vim -> $ sudo apt-get install vim 
@@ -47,7 +47,20 @@
 # * Acesse o repositório -> $ cd install-ubuntu-1804
 # * Atualizando o repositório local -> $ git pull
 # * install php 
-# 
+#
+# Adicionar armazenamento dedicado de gravação no Zoneminder
+# * Verifique qual nome do disco: $ fdisk -l
+# * Monte ele: $ fdisk /dev/sdb (sdb = nome_do_disco)
+#   -> opção p --> mostra qual disco será criada a partição. Sempre utilize essa opção para ter certeza em qual disco você 
+#      se encontra.
+#   -> opção n --> utilizado para criar uma nova partição, logo em seguida aparecerão várias perguntas se deseja que a 
+#      partição seja primária ou estendida etc.
+# * Formataremos a partição com o tipo de sistema de arquivo desejado -> $ mkfs -t ext4 /dev/sdb
+# * Criar partição para gravações do zoneminder -> mkdir /gravacao -> mkdir /gravacao/zoneminder -> mkdir /gravacao/zoneminder/events e images.
+# * * Agora execute o comando para montar a partição -> $ mount /dev/sdb /gravacao
+# * Verificar se a partição esta montada -> $ df -h (deverá aparecer assim: /dev/sdb  XXG  XXG   XXG  XX% /gravacao
+
+
 #
 #####################################################################################################################################
 #
