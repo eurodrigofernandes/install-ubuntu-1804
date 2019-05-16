@@ -1,0 +1,8 @@
+Criado por: Rodrigo Anastácio Muniz Fernandes
+
+Versão Zabbix: 4.2
+Sistema OS: Ubuntu 18.04
+Banco de Dados: MySQL
+
+########################################################################################################################################
+1 -> Instale o repositório do Zabbix
